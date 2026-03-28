@@ -193,7 +193,7 @@ export default function WavesDecoded() {
               <div style={{ marginTop: '2.5rem', textAlign: 'left', background: 'rgba(255,255,255,0.85)', padding: '1.5rem', border: '1px solid black', maxWidth: '24rem', marginLeft: 'auto', marginRight: 'auto', transform: 'rotate(1deg)', transition: 'transform 0.5s' }} className="hover-rotate">
                 <p style={{ marginBottom: '0.5rem', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--accent-red)' }}>Editor's note:</p>
                 <p style={{ marginBottom: '1rem', fontSize: '0.875rem', lineHeight: 1.6 }}>
-                  I am not a hair scientist. I am a wavy girl who followed the Curly Girl Method religiously for yearrrrrsss (yes really), and still looked amazing one day and Hagrid the next.
+                  I'm not a hair scientist. I'm just a wavy haired girl who followed the Curly Girl Method for yearrrrrssss (yes, really), and still ended up feeling great one day and like Hagrid the next.
                 </p>
                 <p style={{ fontSize: '0.875rem', lineHeight: 1.6 }}>
                   So naturally, I became obsessive, like really obsessive until I figured out why are they so out of my control.
