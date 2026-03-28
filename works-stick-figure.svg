@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" width="200" height="260">
+  <g fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="100" cy="55" r="18"/>
+    <line x1="100" y1="73" x2="100" y2="140"/>
+    <line x1="100" y1="95" x2="65" y2="55"/>
+    <line x1="100" y1="95" x2="135" y2="55"/>
+    <line x1="100" y1="140" x2="75" y2="200"/>
+    <line x1="100" y1="140" x2="125" y2="200"/>
+  </g>
+  <rect x="50" y="0" width="100" height="26" rx="6" fill="none" stroke="#111" stroke-width="1.5"/>
+  <path d="M90 26 L85 36 L95 36 Z" fill="none" stroke="#111" stroke-width="1.5"/>
+  <text x="100" y="17" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111">LIFT!</text>
+</svg>
