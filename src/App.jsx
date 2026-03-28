@@ -5,7 +5,7 @@ import WavesDecoded from './views/WavesDecoded'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/WavyHair">
       <Routes>
         <Route path="/" element={<WavesDecoded />} />
         <Route path="/magazine" element={<WavesDecoded />} />
