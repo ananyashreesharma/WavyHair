@@ -13,6 +13,16 @@
   -webkit-font-smoothing: antialiased;
 }
 
+/* Paper background covers the dark body from index.css */
+.waves-page-bg {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FDFBF7;
+  z-index: -1;
+}
+
 /* bg canvas */
 .waves-bg-canvas {
   position: fixed;

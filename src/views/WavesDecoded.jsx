@@ -23,12 +23,6 @@ export default function WavesDecoded() {
   const mouseRef = useRef({ x: -1000, y: -1000 })
 
   useEffect(() => {
-    const prev = document.body.style.backgroundColor
-    document.body.style.backgroundColor = '#FDFBF7'
-    return () => { document.body.style.backgroundColor = prev }
-  }, [])
-
-  useEffect(() => {
     const canvas = canvasRef.current
     if (!canvas) return
     const ctx = canvas.getContext('2d')
@@ -157,6 +151,7 @@ export default function WavesDecoded() {
 
   return (
     <>
+    <div className="waves-page-bg" aria-hidden="true" />
     <canvas ref={canvasRef} className="waves-bg-canvas" aria-hidden="true" />
     <div className="waves-decoded">
       <div className="magazine-grid">
