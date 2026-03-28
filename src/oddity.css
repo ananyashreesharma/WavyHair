@@ -1,0 +1,276 @@
+/* oddity */
+.oddity-page {
+  --bg-bone: #EAE8E4;
+  --ink-black: #111111;
+  --stroke-width: 1.5px;
+  --spacing-unit: 8px;
+  --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  background-color: var(--bg-bone);
+  color: var(--ink-black);
+  font-family: var(--font-main);
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: crosshair;
+}
+
+.oddity-page h1,
+.oddity-page h2,
+.oddity-page h3,
+.oddity-page p,
+.oddity-page a {
+  color: var(--ink-black);
+  letter-spacing: -0.02em;
+}
+
+.oddity-page .logo {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.oddity-page .nav-link {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--ink-black);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.oddity-page .nav-link:hover {
+  border-bottom: 1px solid var(--ink-black);
+}
+
+.oddity-page .body-text {
+  font-size: 1.35rem;
+  line-height: 1.4;
+  max-width: 90%;
+  margin-top: 2rem;
+}
+
+.oddity-page header {
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: transparent;
+  pointer-events: none;
+}
+
+.oddity-page header > * {
+  pointer-events: auto;
+}
+
+.oddity-page main {
+  padding: 24px;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  flex: 1;
+}
+
+.oddity-page .doodle-container {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.oddity-page .doodle-path {
+  fill: none;
+  stroke: var(--ink-black);
+  stroke-width: var(--stroke-width);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.oddity-page .doodle-path path,
+.oddity-page .doodle-path line,
+.oddity-page .doodle-path circle {
+  stroke: var(--ink-black);
+  fill: none;
+}
+
+.oddity-page .doodle-path circle[fill] {
+  fill: var(--ink-black);
+}
+
+@keyframes subtle-wiggle {
+  0% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(2deg) scale(1.02); }
+  50% { transform: rotate(-1deg) scale(0.98); }
+  75% { transform: rotate(1deg) scale(1.01); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.oddity-page .animate-wiggle {
+  animation: subtle-wiggle 6s ease-in-out infinite;
+}
+
+.oddity-page .animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.oddity-page .menu-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.oddity-page .menu-item {
+  font-size: 3rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: inline-block;
+  width: fit-content;
+}
+
+.oddity-page .menu-item:hover {
+  transform: skewX(-5deg) translateX(10px);
+  font-style: italic;
+}
+
+.oddity-page .menu-item:active {
+  transform: scale(0.95);
+}
+
+.oddity-page .image-module {
+  margin-top: 60px;
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.oddity-page .image-module img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(110%);
+  transition: filter 0.5s ease;
+}
+
+.oddity-page .image-module:hover img {
+  filter: grayscale(0%) contrast(100%);
+}
+
+.oddity-page .scribble-decor {
+  position: absolute;
+  bottom: -20px;
+  right: -10px;
+  width: 80px;
+  height: 80px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.oddity-page .spacer {
+  height: 100px;
+}
+
+.oddity-page .underline {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+/* sections */
+.oddity-page .oddity-section {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(17, 17, 17, 0.15);
+}
+
+.oddity-page .oddity-section h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.oddity-page .oddity-section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+.oddity-page .oddity-controls {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.oddity-page .oddity-btn {
+  background: none;
+  border: 1.5px solid var(--ink-black);
+  color: var(--ink-black);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.oddity-page .oddity-btn:hover,
+.oddity-page .oddity-btn.active {
+  background: var(--ink-black);
+  color: var(--bg-bone);
+}
+
+.oddity-page .oddity-range {
+  -webkit-appearance: none;
+  width: 100%;
+  max-width: 400px;
+  height: 4px;
+  background: rgba(17, 17, 17, 0.2);
+  margin: 1rem 0;
+}
+
+.oddity-page .oddity-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--ink-black);
+  cursor: pointer;
+}
+
+.oddity-page .oddity-card {
+  border: 1.5px solid var(--ink-black);
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.oddity-page .oddity-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.oddity-page #surprise-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
