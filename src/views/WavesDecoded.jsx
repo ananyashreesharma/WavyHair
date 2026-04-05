@@ -210,7 +210,7 @@ export default function WavesDecoded() {
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '3rem' }}>
                 <div>
                   <p style={{ fontSize: '1.125rem', lineHeight: 1.7, marginBottom: '1.5rem', fontWeight: 300 }}>
-                    <span className="drop-cap">Y</span>our wave doesn't begin at the mid lengths. It starts at the follicle. Under your skin. So you basically can't pressure them into something they're not.
+                    <span className="drop-cap">O</span>ur wave doesn't begin at the mid lengths. It starts at the follicle. Under our skin. So we basically can't pressure them into something they're not.
                   </p>
                   <p style={{ fontSize: '1.125rem', lineHeight: 1.7, marginBottom: '1.5rem', fontWeight: 300 }}>
                     Straight hair grows from symmetrical follicles. Curly hair grows from curved, asymmetrical follicles. Wavy hair? We're in between. Mildly asymmetric. Follicle shape is one major contributor to curl pattern.
