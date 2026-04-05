@@ -179,7 +179,7 @@ export default function WavesDecoded() {
             </nav>
           </div>
           <div className="mono" style={{ fontSize: '0.75rem', opacity: 0.6, lineHeight: 1.6, marginTop: '1.5rem', paddingTop: '1rem', borderTop: '1px solid rgba(0,0,0,0.1)' }}>
-            <p>Curated by a girl who read through papers and articles just to get my hair right!</p>
+            <p>Curated by a girl who read through papers and articles just to get her hair right!</p>
             <p style={{ marginTop: '0.5rem', color: 'var(--accent-red)' }}>Keep scrolling for the good stuff</p>
           </div>
         </aside>
@@ -188,7 +188,7 @@ export default function WavesDecoded() {
           <section id="intro" className="hero-section">
             <div className="hero-content" style={{ maxWidth: '42rem', padding: '2rem 2rem 3rem' }}>
               <h2 className="serif-display" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', lineHeight: 1.1, marginBottom: '2rem', paddingTop: '0.25em' }}>
-                Our hair isn't confused,<br />it's just complex.
+                Our hair aren't Glitching,<br />it's just complex.
               </h2>
               <div style={{ marginTop: '2.5rem', textAlign: 'left', background: 'rgba(255,255,255,0.85)', padding: '1.5rem', border: '1px solid black', maxWidth: '24rem', marginLeft: 'auto', marginRight: 'auto', transform: 'rotate(1deg)', transition: 'transform 0.5s' }} className="hover-rotate">
                 <p style={{ marginBottom: '0.5rem', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--accent-red)' }}>Editor's note:</p>
